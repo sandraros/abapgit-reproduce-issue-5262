@@ -1,0 +1,18 @@
+CLASS zcl_call_transfo_zidcalledbycl DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    CLASS-METHODS main.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zcl_call_transfo_zidcalledbycl IMPLEMENTATION.
+  METHOD main.
+    CALL TRANSFORMATION zidcalledbycl SOURCE root = sy-subrc RESULT XML DATA(result).
+  ENDMETHOD.
+ENDCLASS.
